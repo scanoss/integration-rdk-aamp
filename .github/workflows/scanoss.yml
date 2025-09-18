@@ -23,8 +23,7 @@ jobs:
         id: scanoss-code-scan-step
         uses: scanoss/code-scan-action@v1.2.2
         with:
-          policies: cpl, und
-          api.url: https://api.scanoss.com/scan/direct
+          policies: und
           api.key: ${{ secrets.SC_API_KEY }}
           deptrack.upload: true
           deptrack.url: 'https://dependency-track.scanoss.xyz/'
