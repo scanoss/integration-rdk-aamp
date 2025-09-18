@@ -24,3 +24,9 @@ Linux/googletest/
 test/l2test/result/
 test/l2test/data/aamp/*
 **/*.swp
+
+tmp/
+.scanoss/
+*.json
+*.wfp
+.idea/
