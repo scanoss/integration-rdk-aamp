@@ -24,7 +24,6 @@
     ],
     "remove": [
       {
-        "path": "TimedMetadata.h",
         "purl": "pkg:github/pxscene/spark-externals"
       }
     ],
