@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "skip": {
+      "patterns": {
+        "scanning": [
+          "cmake-build-debug/",
+          "cmake/"
+        ]
+      },
+      "sizes": {}
+    }
+  },
+  "bom": {
+    "include": [
+      {
+        "purl": "pkg:github/rdkcentral/aamp"
+      },
+      {
+        "purl": "pkg:github/rdkcmf/rdk-aampmetrics"
+      },
+      {
+        "purl": "pkg:github/rdkcmf/rdk-gst-plugins-rdk-aamp"
+      }
+    ],
+    "remove": [
+      {
+        "purl": "pkg:github/pxscene/spark-externals"
+      }
+    ],
+    "replace": [
+      {
+        "purl": "pkg:github/rdkcmf/rdk-aamp",
+        "replace_with": "pkg:github/rdkcentral/aamp"
+      }
+    ]
+  }
+}
