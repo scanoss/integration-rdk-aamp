@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pull-requests: write
   checks: write
   actions: read
@@ -30,3 +30,4 @@ jobs:
           deptrack.projectname: 'rdkcentral/aamp'
           deptrack.projectversion: '1.0.0'
           deptrack.apikey: ${{ secrets.SC_DT_API_KEY }}
+          runtimeContainer: 'ghcr.io/scanoss/scanoss-py:v1.44.0'
